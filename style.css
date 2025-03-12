@@ -131,7 +131,7 @@ header .search-form input {
 
 header .search-form label {
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--black);
     padding: 1rem;
 }
@@ -178,8 +178,9 @@ header .cart-container .cart-item .fa-times:hover {
 header .cart-container .cart-item img {
     height: 7rem;
     width: 5rem;
-    border-radius: .7rem;
+    border-radius: .5rem;
 }
+
 header .cart-container .cart-item .content h3 {
     font-size: 2rem;
     color: var(--black);
@@ -205,7 +206,6 @@ header .cart-container .btn {
     align-items: center;
     background: url(Img/bg.jpg );
     background-size: contain;
-    
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -224,7 +224,7 @@ header .cart-container .btn {
     font-size: 1.2rem;
     font-weight: lighter;
     line-height: 1.8;
-    padding: 1rem 0 ;
+    padding: 1rem 0;
     color: #eee;
 }
 
@@ -235,6 +235,7 @@ header .cart-container .btn {
     flex-wrap: wrap;  
     background: var(--black);
 }
+
 .about .wrapper .image {
     flex: 1 1 45rem;
 }
@@ -333,7 +334,7 @@ header .cart-container .btn {
 }
 
 .products .box-container .box .image {
-    padding: 2.5rem 0;
+    padding: 1rem 0;
 }
 
 .products .box-container .box .image img {
@@ -555,17 +556,16 @@ header .cart-container .btn {
 
 .credit {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #fff;
     padding: 1.5rem;
     font-weight: lighter;
+    text-transform: none;
 
     span {
         color: var(--main-color);
     }
 }
-
-
 
 
 /****** Media Screen ******/
@@ -574,6 +574,7 @@ header .cart-container .btn {
     html {
         font-size: 55%;
     }
+
     header {
         padding: 1.5rem 2rem;
     }
@@ -606,12 +607,17 @@ header .cart-container .btn {
         font-size: 2rem;
     }
 
+    header .navbar a:hover {
+        border-bottom: none;
+    }
+
     header .search-form {
         width: 90%;
         right: 2rem;
     }
 
     .home {
+        min-height: 420px;
         background-position: left;
         justify-content: center;
     }
@@ -629,4 +635,9 @@ header .cart-container .btn {
     html {
         font-size: 50%;
     }
+
+    .home {
+        min-height: 380px;
+    
+    }    
 }
